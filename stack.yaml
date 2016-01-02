@@ -1,1 +1,13 @@
-resolver: lts-3.6
+resolver: nightly-2016-01-02
+
+allow-newer: true
+
+packages:
+- '.'
+- location:
+      git: https://github.com/tolysz/aeson.git
+#      commit: de2736778ff880d739d24f3c78dd028b94cc5cd0 # version 8.0.0.2
+      commit: 405d1ca6211b9b332b02581c362a48d05302a95b # version 10.0.0.0.
+
+extra-deps:
+- possible-0.1.0.5
